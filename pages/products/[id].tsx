@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         return {
             props: {
                 product
-            }
+            }, revalidate: 10
         }
      }
 
@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
      }
 }
 
-export const getStaticPaths: GetStaticPaths =async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
     const products = await fetchProducts()
 
     const paths = products.map(product => {
