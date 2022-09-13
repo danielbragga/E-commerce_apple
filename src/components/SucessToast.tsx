@@ -1,10 +1,8 @@
-// src/components/SuccessToast.tsx
-
-import { Button, Toast, ToastBody } from "reactstrap"
+import { Button, Toast, ToastBody } from "reactstrap";
 
 const SuccessToast = (props: {
-  toastIsOpen: boolean
-  setToastIsOpen: (isOpen: boolean) => void
+  toastIsOpen: boolean;
+  setToastIsOpen: (isOpen: boolean) => void;
 }) => {
   return (
     <Toast
@@ -21,7 +19,7 @@ const SuccessToast = (props: {
         ></Button>
       </ToastBody>
     </Toast>
-  )
-}
+  );
+};
 
-export default SuccessToast
+export default SuccessToast;
