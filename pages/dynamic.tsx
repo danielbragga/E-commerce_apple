@@ -8,13 +8,11 @@ interface ApiResponse {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const serverSideData: ApiResponse = await fetch(
-    `${process.env.NEXT_PUBLIC_APIURL}/api/hello`
-  ).then((res) => res.json());
+  const serverSideData: ApiResponse = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json())
 
   return {
     props: {
-      serverSideData,
+      serverSideData
     },
   };
 };
@@ -30,7 +28,7 @@ const Dynamic: NextPage = (props: {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("/api/hello").then((res) => res.json());
+    const data = await fetch("/api/hello").then(res => res.json());
     setClientSideData(data);
   };
   return (

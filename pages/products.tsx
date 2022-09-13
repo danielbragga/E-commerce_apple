@@ -7,7 +7,7 @@ import ProductsList from "../src/components/ProductsList";
 import {
   fetchProducts,
   ProductType,
-} from "../src/components/services/products";
+} from "../src/services/products";
 
 export const getStaticProps: GetStaticProps = async () => {
   const products = await fetchProducts();
@@ -16,8 +16,9 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Products: NextPage = (props: {
-  products?: ProductType[];
   children?: ReactNode;
+  products?: ProductType[];
+  
 }) => {
   return (
     <>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button, Card, CardBody, CardSubtitle } from "reactstrap";
 import { useCart } from "../hooks/useCart";
-import { ProductType } from "./services/products";
+import { ProductType } from "../services/products";
 import SuccessToast from "./SucessToast";
 
 type ProductCardProps = {

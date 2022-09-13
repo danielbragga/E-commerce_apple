@@ -4,53 +4,49 @@ import { ReactNode } from "react";
 import { Container } from "reactstrap";
 import Header from "../../src/components/Header";
 import ProductDetails from "../../src/components/ProductDetails";
-import {
-  fetchProduct,
-  fetchProducts,
-  ProductType,
-} from "../../src/components/services/products";
+import { fetchProduct, fetchProducts, ProductType } from "../../src/services/products";
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const id = context.params?.id;
+  const id = context.params?.id
 
-  if (typeof id === "string") {
-    const product = await fetchProduct(id);
+  if (typeof id === 'string') {
+    const product = await fetchProduct(id)
 
     return {
       props: {
-        product,
-      },
-    };
+        product
+      }
+    }
   }
 
   return {
     redirect: {
-      destination: "/products",
-      permanent: false,
-    },
-  };
-};
+      destination: '/products',
+      permanent: false
+    }
+  }
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const products = await fetchProducts();
+  const products = await fetchProducts()
 
-  const paths = products.map((product: { id: { toString: () => any } }) => {
+  const paths = products.map(product => {
     return {
       params: {
-        id: product.id.toString(),
-      },
-    };
-  });
+        id: product.id.toString()
+      }
+    }
+  })
 
   return {
     paths,
-    fallback: false,
-  };
-};
+    fallback: false
+  }
+}
 
 const Product: NextPage = (props: {
-  children?: ReactNode;
-  product?: ProductType;
+  children?: ReactNode
+  product?: ProductType
 }) => {
   return (
     <>
@@ -66,7 +62,7 @@ const Product: NextPage = (props: {
         <ProductDetails product={props.product!} />
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Product;
+export default Product

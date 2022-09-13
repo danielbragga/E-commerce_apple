@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Button, Col, Row, Table } from "reactstrap";
 import { useCart } from "../hooks/useCart";
-import { ProductType } from "./services/products";
+import { ProductType } from "../services/products";
 
 type CartEntry = {
   product: ProductType;
@@ -67,7 +67,7 @@ export default function CartTable() {
           ...list,
           {
             product,
-            quantity: 1,
+            quantity: 1
           },
         ];
       }
@@ -91,9 +91,7 @@ export default function CartTable() {
         </tr>
       </thead>
       <tbody>
-        {cartEntries.map((entry) => (
-          <CartTableRow key={entry.product.id} entry={entry} />
-        ))}
+        {cartEntries.map(entry => <CartTableRow key={entry.product.id} entry={entry} />)}
       </tbody>
     </Table>
   );

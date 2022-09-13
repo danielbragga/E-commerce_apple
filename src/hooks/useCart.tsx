@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { ProductType } from "../components/services/products";
+import { ProductType } from "../services/products";
 
 type CartContextType = {
   cart: ProductType[];
