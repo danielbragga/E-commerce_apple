@@ -1,10 +1,10 @@
 # Product Catalog Apple
 
-![Design preview for the Project](./design/image_1.png)
+![Design preview for the Project](./images/image_1.png)
 
 #
 
-![Design preview for the Cart](./design/image_2.png)
+![Design preview for the Cart](./images/image_2.png)
 
 ## Welcome! 👋
 
