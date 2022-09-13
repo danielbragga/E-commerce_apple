@@ -26,7 +26,7 @@ Your users should be able to:
 
 My project is hosted on Netlify in the link below:
 
-- [Vercel]()
+- [Vercel](https://black-nextjs-blond.vercel.app/)
 
 ## Built with
 
