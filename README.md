@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Catalog Apple
 
-## Getting Started
+![Design preview for the Project](./design/image_1.png)
 
-First, run the development server:
+#
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Design preview for the Cart](./design/image_2.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Welcome! 👋
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Thanks for checking out this front-end coding project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**To do this challenge, i needed of HTML, CSS and JavaScript. I needed to the libraries ReactJS and Next.js (React Framework) and Bootstrap**.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## The project
 
-## Learn More
+The project has with objective to build out this Product Catalog Apple and get it looking as close responsive and intuitive as possible.
 
-To learn more about Next.js, take a look at the following resources:
+Your users should be able to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add products to cart and/or remove and view price and quantity of added products
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy of my project
 
-## Deploy on Vercel
+My project is hosted on Netlify in the link below:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Vercel]()
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Built with
+
+- Javascript
+- TypeScript
+- React.js
+- Bootstrap - For Styles
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/)
+- HTML
+- CSS
