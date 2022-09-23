@@ -10,7 +10,7 @@
 
 Thanks for checking out this front-end coding project.
 
-**To do this challenge, i needed of HTML, CSS and JavaScript. I needed to the libraries ReactJS and Next.js (React Framework) and Bootstrap**.
+**To do this challenge, I needed of HTML, CSS and JavaScript. I needed to the libraries ReactJS and Next.js (React Framework) and Bootstrap**.
 
 ## The project
 
