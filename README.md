@@ -24,7 +24,7 @@ Your users should be able to:
 
 ## Deploy of my project
 
-My project is hosted on Netlify in the link below:
+My project is hosted on Vercel in the link below:
 
 - [Vercel](https://black-nextjs-blond.vercel.app/)
 
@@ -32,7 +32,6 @@ My project is hosted on Netlify in the link below:
 
 - Javascript
 - TypeScript
-- React.js
 - Bootstrap - For Styles
 - Flexbox
 - [React](https://reactjs.org/) - JS library
